@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Employee",
+		"_postman_id": "ba56dd17-8054-7ac8-7f37-75b49eb7bb82",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/employee",
+			"request": {
+				"url": "http://localhost:8080/employee",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"name\": \"Pragati\",\n  \"sal\": 50000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/employees",
+			"request": {
+				"url": "http://localhost:8080/employees",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/employee/1",
+			"request": {
+				"url": "http://localhost:8080/employee/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/employee/1",
+			"request": {
+				"url": "http://localhost:8080/employee/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Pragati Garud\",\n\t\"sal\": 60000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/employee/1",
+			"request": {
+				"url": "http://localhost:8080/employee/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
